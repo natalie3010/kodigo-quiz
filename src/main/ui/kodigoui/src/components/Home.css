@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #974ed0;
+}
+
+header {
+  height: 70px;
+  padding: 15px;
+}
+.buffer-message {
+  text-align: center;
+}
+
+.primary {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0px 10px;
+
+  background: #ffff58;
+  border-radius: 5px;
+}
+
+.primary:hover {
+  background-color: violet;
+}
+.secondary {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0px 10px;
+
+  background: #ffff58;
+  border-radius: 5px;
+}
+.secondary:hover {
+  background-color: violet;
+}
+.adminarea--button {
+  width: 100px;
+  padding: 10px;
+  float: right;
+
+  font-weight: 600;
+  font-size: 12px;
+
+  background: #3fce1c;
+  border-radius: 5px;
+  color: white;
+}
+
+.home--title {
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+  margin: 100px 0px 0px;
+}
+
+.section--homeplay {
+  height: 200px;
+  width: 350px;
+  margin: 0px auto;
+  padding: 20px;
+
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+
+  background-color: #f1f1f1;
+
+  box-shadow: 0px 3px 7px #0000001a;
+
+  border-radius: 10px;
+}
+
+.form--homepin {
+  margin: 10px;
+  font-weight: 600;
+}
+
+.home--textfield {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  border-style: none;
+  border-radius: 3px;
+  border: 1px solid #999999;
+}
+
+.home--button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+
+  font-weight: 600;
+  font-size: 15px;
+
+  background: #363636;
+  border-radius: 5px;
+  color: white;
+}

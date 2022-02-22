@@ -1,0 +1,195 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.quiz-container {
+  box-shadow: 0px 3px 7px #0000001a;
+  height: 400px;
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+
+  background-color: #f1f1f1;
+
+  box-shadow: 0px 3px 7px #0000001a;
+
+  border-radius: 10px;
+}
+
+.score-section {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* QUESTION/TIMER/LEFT SECTION */
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+.timer-text {
+  background: rgb(230, 153, 12);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(255, 189, 67);
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 50px 0px;
+}
+
+.answer-button {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 3px 10px #00000033;
+  border: 1px solid #4e4e4e;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  border-radius: 10px;
+}
+
+.answer-button:hover {
+  background-color: #e9e683;
+}
+
+.answer-button:focus {
+  outline: none;
+}
+
+/* .correct {
+    background-color: #2f922f;
+  }
+  
+  .incorrect {
+    background-color: #ff3333;
+  } */
+
+/* QUIZ STYLING */
+
+.pool-container {
+  box-shadow: 0px 3px 7px #0000001a;
+  height: 100%;
+  width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+
+  background-color: #f1f1f1;
+
+  box-shadow: 0px 3px 7px #0000001a;
+
+  border-radius: 5px;
+}
+
+.pool-container h2 {
+  font-weight: 600;
+}
+
+.name-label {
+  margin-left: 10px;
+  padding-left: 0px;
+  float: left;
+}
+
+.actions-label {
+  margin-left: 80px;
+  padding-left: 4px;
+}
+
+.pool-hr-line {
+  border: 1px solid #333333;
+}
+
+.pool-name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 50px;
+
+  background: #95caff;
+  border-radius: 5px;
+}
+
+.pool-actions {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 60px;
+  background: #95caff;
+  border-radius: 5px;
+}
+
+.pool-actions2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 60px;
+  border-radius: 5px;
+}
+
+.pool-actions2 button:hover {
+  background-color: #f8cbcb;
+}
+
+.pool-actions2 button {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0px 5px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.pool-actions button {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0px 5px;
+
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.pool-actions button:hover {
+  background-color: #f8cbcb;
+}
+.secondary {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0px 10px;
+
+  background: #ffff58;
+  border-radius: 5px;
+}
+.secondary:hover {
+  background-color: violet;
+}
