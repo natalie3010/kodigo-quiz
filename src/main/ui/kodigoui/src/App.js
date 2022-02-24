@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
 import './style.css';
 import Home from './components/Home';
 import AdminSignup from './components/AdminSignup';
@@ -24,7 +24,7 @@ function App() {
 
     <>
     
-      <Router>
+      <HashRouter>
         
         <Routes>
            <Route path='/' element={<Home />} />
@@ -41,7 +41,7 @@ function App() {
            <Route path='/group/leaderboard/list/:qgid/:playername' element={<LeaderboardList />} />
         </Routes>
           
-      </Router>
+      </HashRouter>
               
           
     </>

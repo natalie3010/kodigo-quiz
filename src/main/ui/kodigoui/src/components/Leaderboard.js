@@ -7,39 +7,47 @@ import { Link } from "react-router-dom";
 
 export default function Leaderboard() {
 
-  const [users, setUsers] = useState([])
-  const { qgid } = useParams();
-  let history = useNavigate();
+    const [users, setUsers] = useState([])
+    const { qgid } = useParams();
+    let history = useNavigate();
 
-  useEffect(() => {
-    getPlayers();
-  }, [])
-
-  function getPlayers() {
-    fetch(`/player/${qgid}`)
-      .then(response => {
-        return response.json()
-      })
-      .then(data => {
-        setUsers(data)
-        console.log(data)
-
-      })
-  }
-
-  function deleteAnswers() {
-    alert(qgid);
-    fetch(`/delete/player/${qgid}`, {
-      method: "DELETE",
-    }).then((result) => {
-      result.json().then((resp) => {
-        console.warn(resp);
+    useEffect(() => {
         getPlayers();
+    }, [])
+
+    function getPlayers() {
+        fetch(`/player/${qgid}`)
+            .then(response => {
+                return response.json()
+            })
+            .then(data => {
+                setUsers(data)
+                console.log(data)
+
+            })
+    }
+
+    function deleteAnswers() {
+
+      alert(qgid);
+  
+      fetch(`/delete/player/${qgid}`, {
+  
+        method: "DELETE",
+  
+      }).then((result) => {
+  
+        result.json().then((resp) => {
+  
+          console.warn(resp);
+  
+          getPlayers();
+  
+        });
+  
       });
-    });
-  }
-
-
+  
+    }
   return (
     <div>
       <Navbarpool />
@@ -50,14 +58,22 @@ export default function Leaderboard() {
         <table className="pool-table">
           
           <tbody>
+
             <td className="pool-name"> Name</td>
+
             <td className="pool-name"> Score</td>
+
             <td className="pool-name">
-              
-                <button className="pool-actions-leader" onClick={() => deleteAnswers()}>
-                  {" "}
-                  Delete leaderboard{" "}
-                </button>
+
+
+
+              <button className="pool-actions-leader" onClick={() => deleteAnswers()}>
+
+                {" "}
+
+                Delete leaderboard{" "}
+
+              </button>
               
             </td>
           </tbody>

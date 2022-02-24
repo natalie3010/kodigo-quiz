@@ -7,7 +7,7 @@
   box-shadow: 0px 3px 7px #0000001a;
   height: auto;
   width: 400px;
-  margin: 30px auto;
+  margin: 90px auto;
   padding: 20px;
 
   font-family: 'Poppins', sans-serif;
@@ -83,37 +83,34 @@
   outline: none;
 }
 
+
+
 .correct {
   background-color: #2f922f;
+  opacity: 0.8;
   text-align: center;
   padding: 20px;
   box-shadow: 0 3px 10px #00000033;
-  border: 1px solid #4e4e4e;
+  border: 5px solid #e7af14;
   cursor: pointer;
   transition: all 0.3s ease-in;
   border-radius: 10px;
-  font-weight: bold;
+  color: white;
+  font-weight: 600;
 }
 
 .incorrect {
   background-color: #ff3333;
+  opacity: 0.8;
   text-align: center;
   padding: 20px;
   box-shadow: 0 3px 10px #00000033;
-  border: 1px solid #4e4e4e;
+  border: 0px solid #4e4e4e;
   cursor: pointer;
   transition: all 0.3s ease-in;
   border-radius: 10px;
-}
-
-.answer-button:disabled,
-button[disabled]{
-
-  border: 1px solid #999999;
-
-  color: #fffefe;
-
-}
+  color: white;
+  }
 
 #countdown {
 
@@ -175,4 +172,9 @@ svg circle {
 
   fill: none;
 
+}
+
+.btnson{
+  border: none;
+ 
 }

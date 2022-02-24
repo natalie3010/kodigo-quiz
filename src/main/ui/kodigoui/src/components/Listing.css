@@ -94,7 +94,7 @@
   box-shadow: 0px 3px 7px #0000001a;
   height: 100%;
   width: 600px;
-  margin: 30px auto;
+  margin: 80px auto;
   padding: 20px;
 
   font-family: "Poppins", sans-serif;
@@ -192,4 +192,9 @@
 }
 .secondary:hover {
   background-color: violet;
+}
+
+.t-responsive{
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }

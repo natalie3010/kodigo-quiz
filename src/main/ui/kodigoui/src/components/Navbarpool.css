@@ -1,60 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
 
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar--pool{
-    font-weight: 900;
-    font-size: 24px;
-
-    height: 70px;
-    width: 100%;
-    display: flex;
-    padding: 20px;
-    box-shadow: 0px 3px 7px #0000001a;
-    background-color: #a7f16a;
-
+.navpool {
+  height: 60px;
+  width: 100%;
+  box-shadow: 0px 3px 7px #0000001a;
+  /* background-color: #6abbf1; */
+  /* background-color: #974ed0; */
+  position: fixed;
+  top: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  --bs-bg-opacity: 1;
+  display: flex;
+  /* animation: all .5s ease-in-out; */
+  animation: 1s ease-out 0s 1 fadein;
+  /* transform-origin: left top; */
+  transform: scaleY(1s);
+  overflow: hidden;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding-right: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  background-color: #fafafa;
 }
 
-.kodigo--logo {
-    display: flex;
-    margin: 0px 50px 0px 0px;
-    background: none;
-    border: none;
-    font-weight: 900;
-    font-size: 24px;
-
-}
-
-.logo {
-
-    color: #000000;
-  
-    text-decoration: none;
-  
+@keyframes fadein {
+  0% {
+    transform: translateY(-100%);
   }
-
-.container--buttons {    
-    font-weight: 600;
-    font-size: 15px;
-  
-    margin-right: 0;
-    margin-left: auto;
-    padding: 4px 0px;
-    
+  100% {
+    transform: translateY(0);
+  }
+}
+.Sign-out {
+  float: right;
 }
 
-.container--buttons button {
-    text-align: center;
-    font-weight: 600;
-    font-size: 15px;
-    margin: 0px 10px;
-
-    background: #ffff58;
-    border-radius: 5px;
+.sign-out-btn {
+  background-color: #fbc2c2;
+  border-radius: 100px;
+  box-shadow: rgba(187, 44, 44, 0.2) 0 -25px 18px -14px inset,
+    rgba(187, 44, 44, 0.15) 0 1px 2px, rgba(187, 44, 44, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(187, 44, 44, 0.15) 0 8px 16px,
+    rgba(187, 44, 44, 0.15) 0 16px 32px;
+  color: rgb(128, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.container--buttons button:hover {
-    background-color: violet;
+.sign-out-btn:hover {
+  box-shadow: rgba(187, 44, 44, 0.35) 0 -25px 18px -14px inset,
+    rgba(187, 44, 44, 0.25) 0 1px 2px, rgba(187, 44, 44, 0.25) 0 2px 4px,
+    rgba(187, 44, 44, 0.25) 0 4px 8px, rgba(187, 44, 44, 0.25) 0 8px 16px,
+    rgba(187, 44, 44, 0.25) 0 16px 32px;
+  transform: scale(1.05);
 }

@@ -114,88 +114,95 @@ export default function PoolList() {
       <Navbarpool />
 
       <div className="pool-container">
-      <button onClick={() => history(-1)} className="L-back"> &#10094; </button>
+        <button onClick={() => history(-1)} className="L-back">
+          {" "}
+          &#10094;{" "}
+        </button>
         <h2>Pool list from Admin</h2>
-
-        <table className="pool-table">
-          <thead>
-            <tr>
-              <th className="name-label">Name</th>
-              <th className="actions-label">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {users.map((user) => (
-              <tr key={user.qpid}>
-                <td className="pool-name">{user.name}</td>
-                <td className="pool-actions">
-                  <Link to={"/group/" + user.qpid}>
-                    <button>Enter pool</button>
-                  </Link>
-                  <button onClick={() => handleShowEdit(user.qpid)}>
-                    Edit
-                  </button>
-                  <button onClick={() => deletePool(user.qpid)}>Delete</button>
-                </td>
+        <div className="t-responsive">
+          <table className="pool-table">
+            <thead>
+              <tr>
+                <th className="name-label">Name</th>
+                <th className="actions-label">Actions</th>
               </tr>
-            ))}
-
-            <>
-              <Modal show={show} onHide={handleClose}>
-                <Modal.Header>
-                  <Modal.Title>Add a new pool here!</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                  <form className="login">
-                    <label>Pool Name</label> <br />
-                    <input
-                      className="admin--textfield"
-                      type="text"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                    />{" "}
-                    <br />
-                    <button className="admin--button" onClick={SignUp}>
-                      Add Question
+            </thead>
+            <tbody>
+              {users.map((user) => (
+                <tr key={user.qpid}>
+                  <td className="pool-name">{user.name}</td>
+                  <td className="pool-actions">
+                    <Link to={"/group/" + user.qpid}>
+                      <button>Enter pool</button>
+                    </Link>
+                    <button onClick={() => handleShowEdit(user.qpid)}>
+                      Edit
                     </button>
-                  </form>
-                </Modal.Body>
-                <Modal.Footer>
-                  <button className="secondary" onClick={handleClose}>
-                    Close
-                  </button>
-                </Modal.Footer>
-              </Modal>
-            </>
-
-            <>
-              <Modal show={showEdit} onHide={handleCloseEdit}>
-                <Modal.Body>
-                  <form className="login">
-                    <label>Edit Pool Name</label> <br />
-                    <input
-                      className="admin--textfield"
-                      type="text"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                    />{" "}
-                    <br />
-                    <button className="admin--button" onClick={Edit}>
-                      Submit change
+                    <button onClick={() => deletePool(user.qpid)}>
+                      Delete
                     </button>
-                  </form>
-                </Modal.Body>
-                <Modal.Footer>
-                  <button className="secondary" onClick={handleCloseEdit}>
-                    Close
-                  </button>
-                </Modal.Footer>
-              </Modal>
-            </>
-          </tbody>
-        </table>
+                  </td>
+                </tr>
+              ))}
+              <>
+                <Modal show={show} onHide={handleClose}>
+                  <Modal.Header>
+                    <Modal.Title>Add a new pool here!</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <form className="login">
+                      <label>Pool Name</label> <br />
+                      <input
+                        className="admin--textfield"
+                        type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                      />{" "}
+                      <br />
+                      <button className="admin--button" onClick={SignUp}>
+                        Add Question
+                      </button>
+                    </form>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <button className="secondary" onClick={handleClose}>
+                      Close
+                    </button>
+                  </Modal.Footer>
+                </Modal>
+              </>
+
+              <>
+                <Modal show={showEdit} onHide={handleCloseEdit}>
+                  <Modal.Body>
+                    <form className="login">
+                      <label>Edit Pool Name</label> <br />
+                      <input
+                        className="admin--textfield"
+                        type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                      />{" "}
+                      <br />
+                      <button className="admin--button" onClick={Edit}>
+                        Submit change
+                      </button>
+                    </form>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <button className="secondary" onClick={handleCloseEdit}>
+                      Close
+                    </button>
+                  </Modal.Footer>
+                </Modal>
+              </>
+            </tbody>
+          </table>
+        </div>
         <div className="container--buttons">
-          <button onClick={handleShow}>Create Pool</button>
+          <button className="secondary" onClick={handleShow}>
+            Create Pool
+          </button>
         </div>
       </div>
     </div>

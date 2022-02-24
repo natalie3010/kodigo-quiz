@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Navbar from './Navbar';
+import './Home.css';
 
 const AdminSignup = props => {
     const [name, setName] = useState("");
@@ -30,18 +31,20 @@ const AdminSignup = props => {
   return (
       <div>
           <Navbar />
-          <section className='admin'>
-          <h1 className='admin--title'>Admin Sign up</h1> <br />
-          <form className='login'>
-              <label>Name</label> <br />
-              <input className='admin--textfield' type="text" value={name} onChange={(e) => setName(e.target.value)} /> <br />
-              <label>Email</label> <br />
-              <input className='admin--textfield' type="email" value={email} onChange={(e) => setEmail(e.target.value)} /> <br />
-              <label>Pin</label> <br />
-              <input className='admin--textfield' type="text" value={pin} onChange={(e) => setPin(e.target.value)} /> <br />
-              <button className='admin--button' onClick={SignUp} >Sign up</button>
-          </form>
-      </section>
+          <div className='content'>
+            <section className='admin'>
+            <h1 className='admin--title'>Admin Sign up</h1> <br />
+            <form className='login'>
+                <label>Name</label> <br />
+                <input className='admin--textfield' type="text" value={name} onChange={(e) => setName(e.target.value)} /> <br />
+                <label>Email</label> <br />
+                <input className='admin--textfield' type="email" value={email} onChange={(e) => setEmail(e.target.value)} /> <br />
+                <label>Pin</label> <br />
+                <input className='admin--textfield' type="text" value={pin} onChange={(e) => setPin(e.target.value)} /> <br />
+                <button className='admin--button' onClick={SignUp} >Sign up</button>
+            </form>
+        </section>
+      </div>
       </div>
       
   )

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
 import { Modal, Button } from "react-bootstrap";
+import Footer from "./Footer";
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -63,7 +64,7 @@ export default function Home() {
         </Link>
       </header>
       <h1 className="home--title">KODIGO</h1> <br />
-      <section className="section--homeplay">
+      <section className="section--homeplay bounce-5">
         <div className="form--homepin">
           <input
             className="home--textfield"
@@ -140,6 +141,15 @@ export default function Home() {
               </Modal.Footer>
             </Modal>
           </>
+          <div class="animation-area">
+            <ul class="box-area">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <Footer/>
     </div>
   );
 }

@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ff56bb3.css",
-    "main.js": "/static/js/main.0853294c.js",
+    "main.css": "/static/css/main.2503c3a2.css",
+    "main.js": "/static/js/main.a8b87503.js",
+    "static/media/wii.mp3": "/static/media/wii.9b9a1a0e88699fd15e48.mp3",
+    "static/media/audio2.svg": "/static/media/audio2.4307197cca7d1e8eec3cd9f61b2bd4c4.svg",
+    "static/media/audio.svg": "/static/media/audio.a98d2581088f8a464a24138743ed7c7e.svg",
+    "static/media/logo.svg": "/static/media/logo.7c3b407f461ca463a6a56a8842f7d827.svg",
+    "static/media/tweet.svg": "/static/media/tweet.b74da2226286d251114f874b1cbb98c6.svg",
+    "static/media/ig.svg": "/static/media/ig.e6539ede4f5d39a83f89f6597b4e9c3e.svg",
+    "static/media/fb.svg": "/static/media/fb.1523ff226862dfb808be28c7fb40a1c5.svg",
     "index.html": "/index.html",
-    "main.3ff56bb3.css.map": "/static/css/main.3ff56bb3.css.map",
-    "main.0853294c.js.map": "/static/js/main.0853294c.js.map"
+    "static/media/user.svg": "/static/media/user.9fd9547f6f53286029f1cea1b2b28ffe.svg",
+    "static/media/cross.svg": "/static/media/cross.a54a961e6e1625c97359.svg",
+    "static/media/circle.svg": "/static/media/circle.86b0a8c4348d1dd7cbed.svg",
+    "static/media/tri.svg": "/static/media/tri.64f79eab54e41b7e547c.svg",
+    "static/media/square.svg": "/static/media/square.8082a1c83e8cb47a0537.svg",
+    "main.2503c3a2.css.map": "/static/css/main.2503c3a2.css.map",
+    "main.a8b87503.js.map": "/static/js/main.a8b87503.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ff56bb3.css",
-    "static/js/main.0853294c.js"
+    "static/css/main.2503c3a2.css",
+    "static/js/main.a8b87503.js"
   ]
 }

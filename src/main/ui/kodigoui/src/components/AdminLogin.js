@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Alert } from 'react-bootstrap';
 import { authenticateAdmin } from '../services/authentication/authActions';
 import Navbar from './Navbar';
+import './Home.css';
 
 
 
@@ -41,6 +42,7 @@ class AdminLogin extends Component {
     return (
           <div> 
               <Navbar />
+              <div className='content'>
               <section className='admin'>
                 {error && <Alert variant="danger">{error}</Alert>}
                   <h1 className='admin--title'>Admin Log in</h1> <br />
@@ -64,6 +66,7 @@ class AdminLogin extends Component {
                       </p>
                   </form>
               </section>
+              </div>
           </div>
     )
   }

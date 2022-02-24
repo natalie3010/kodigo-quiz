@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import './Questions.css';
 import Navbar from "./Navbar";
+import "./Home.css";
+import music from "./audio/wii.mp3"
+import son from "./img/audio.svg";
+import soff from "./img/audio2.svg";
 
 
 
@@ -114,9 +118,13 @@ export default function PlayerPage() {
 
   
 
-
+  function toggleSound() {
+    var elements = document.getElementsByTagName('audio');
+    for (var e = 0; e < elements.length; elements[e].muted = !elements[e].muted, e++);
+  }
 
   return newQuestion.length > 0 ? (
+    
     <div>
 
       <Navbar />
@@ -124,6 +132,9 @@ export default function PlayerPage() {
 
 
       <div className='quiz-containerp'>
+
+
+
         {showScore ? (
           <div className='score-section'>
             You scored {score} out of {newQuestion.length}
@@ -150,8 +161,24 @@ export default function PlayerPage() {
             </div>
           </>
         )}
+                <div className="btnsound">
+          <button className="btnson" onClick={()=>toggleSound()}><img src={son}width="20" height="20"/></button>
+          <audio
+            src={music}
+            preload="auto"
+            loop="true"
+            autoplay="true"
+            id="music"/>
+        </div>
       </div>
-
+            <div class="animation-area">
+                  <ul class="box-area">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
     </div>
   ) : (
     <p> Loading </p>

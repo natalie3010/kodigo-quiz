@@ -9,19 +9,6 @@ body {
     background-color: #dddddd;
 }
 
-nav {
-    height: 70px;
-    display: flex;
-    padding: 20px;
-    box-shadow: 0px 3px 7px #0000001a;
-    background-color: #6abbf1;
-
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-}
-
 section {
     height: 400px;
     width: 400px;
